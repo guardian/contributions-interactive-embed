@@ -25,12 +25,6 @@ window.init = function init() {
        setAmount(amount);
 
     }));
-
-    $SUMBIT.addEventListener('click', ev => {
-        console.log("submit");
-        console.log(ev);
-        window.location="https://contribute.theguardian.com?amount=" + document.querySelector('input.' + AMOUNT_CLASS).value;
-    });
 };
 
 function select(el) {
@@ -40,7 +34,8 @@ function select(el) {
 
 function setAmount(amount) {
     $('input.' + AMOUNT_CLASS).val(amount);
-    }
+    $SUMBIT.href = "https://contribute.theguardian.com?amount=" + amount.toString();
+}
 
 
 init();

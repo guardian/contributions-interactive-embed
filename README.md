@@ -1,4 +1,4 @@
-Guardian interactive ES6 template
+Contributions Interactive Template
 =================================
 
 An interactive template & test harness, set up with commonly used components and example code

@@ -34,7 +34,7 @@ function select(el) {
 
 function setAmount(amount) {
     $('input.' + AMOUNT_CLASS).val(amount);
-    $SUMBIT.href = "https://contribute.theguardian.com?highlight=" + amount.toString();
+    $SUMBIT.href = "https://contribute.theguardian.com?INTCMP=co_uk_cobed_like&skipAmount=1&highlight=" + amount.toString();
 }
 
 

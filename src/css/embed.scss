@@ -21,15 +21,19 @@ body {
 
 .title {
     margin-top: 0;
-    padding-left: 7px;
+    margin-bottom: 2px;
+    padding-left: 5px;
     padding-top: 7px;
+    font-family: 'Guardian Egyptian Web';
 }
 
 p {
-    line-height:20px;
-    font-family:"Guardian Egyptian Web";
-    padding-left: 7px;
+    line-height:24px;
+    font-family:"Guardian Text Egyptian Web";
+    padding-left: 5px;
     padding-right: 15px;
+    margin-top: 8px;
+    margin-bottom: 8px;
 
 
 }
@@ -68,63 +72,71 @@ p {
 
     &.active {
         background-color: $contribute-yellow;
-        font-family: $f-serif-headline;
         color: $black;
     }
 }
 
 .p-cta{
-    margin-bottom:0;
+    margin-bottom:6px;
 }
 
 
 .option-button {
     @include button();
-    width: 23%;
+
+    width: calc((100% - 26px) /4);
     text-align: center;
+    margin-left: 3px;
+    margin-right: 0;
+    padding-top: 7px;
+    padding-bottom: 7px;
+}
+
+.button-group {
+    margin-right: 5px;
     margin-left: 2px;
-    margin-right: 2px;
+}
+
+.flex-container {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.amount_field {
+    display: flex;
+    flex-direction: column;
+}
+
+
+@include mq($from: phablet) {
+    .option-button {
+        width: 70px;
+    }
+
+    .amount_field {
+        flex-direction: row;
+    }
 
 }
 
-.contribute{
-    width: 98%;
+.cont{
+    padding-top:10px;
+}
+
+.contribute {
+    width: 130px;
     background-color: $gu-blue;
     color: white;
-    font-weight:bold;
-    margin-top: 15px;
-    margin-left: 7px;
+    font-weight: bold;
+    margin-top: 12px;
+    margin-left: 5px;
     margin-right: 7px;
+    text-align: left;
+    padding-left:15px;
+    padding-right:0;
     &:hover {
         background-color: $gu-blue-dark;
-    }
-
-}
-
-
-
-@media screen and (max-width: 340px) {
-    .option-button {
-        margin-left: 0;
-        margin-right: 0;
-    }
-}
-
-
-
-
-.action--contribute {
-    width: 100%;
-    border: none;
-    background-color: #328A3E;
-    line-height: 30px;
-
-    &:hover, &:focus {
-        background-color: darken(#328A3E, 10%);
-    }
-
-    &:focus {
-        box-shadow: 0 0 2px 2px rgba(0, 86, 137, .5);
     }
 
     &:after {
@@ -133,13 +145,15 @@ p {
         display: inline-block;
         background-repeat: no-repeat;
         width: 30px;
-        height: 28px;
-        background-image: svg-url('<svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 36 36"><path fill="white" stroke="white" d="M22.8 14.6L15.2 7l-.7.7 5.5 6.6H6v1.5h14l-5.5 6.6.7.7 7.6-7.6v-.9"/></svg>');
+        height: 20px;
+        background-image: svg-url('<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40"><path fill="white" stroke="white" d="M22.8 14.6L15.2 7l-.7.7 5.5 6.6H6v1.5h14l-5.5 6.6.7.7 7.6-7.6v-.9"/></svg>');
         background-size: 100%;
-
         float: right;
     }
 }
+
+
+
 
 .option-button--bold {
     font-weight: bold;

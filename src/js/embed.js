@@ -23,9 +23,14 @@ window.init = function init() {
         select(element);
 
        setAmount(amount);
+        
+        
 
     }));
 };
+
+
+
 
 function select(el) {
     $(helper.getSpecifiedParent(el, 'js-button-group').querySelectorAll('.js-button')).removeClass(ACTIVE_CLASS);

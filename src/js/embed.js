@@ -2,7 +2,6 @@ import iframeMessenger from 'guardian/iframe-messenger'
 import * as helper from 'src/utils/helper'
 import $ from '$'
 
-
 const ACTIVE_CLASS = 'active';
 const AMOUNT_CLASS = 'js-amount';
 const $AMOUNT_PICKER = $('[data-amount]');

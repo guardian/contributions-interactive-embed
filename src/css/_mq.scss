@@ -1,3 +1,5 @@
+@import 'bower_components/sass-mq/mq';
+
 // To enable support for browsers that do not support @media queries,
 // (IE <= 8, Firefox <= 3, Opera <= 9) set $mq-responsive to false
 // Create a separate stylesheet served exclusively to these browsers,
@@ -19,7 +21,7 @@ $mq-breakpoints: (
     desktopAd: 810px,
     mobileLandscape: 480px
 );
-$gs-gutter: 20px;
+
 $mq-media-type: all !default;
 
 

@@ -25,7 +25,7 @@ function select(el) {
 
 function setAmount(amount) {
     $('input.' + AMOUNT_CLASS).val(amount);
-    $SUMBIT.href = "https://contribute.theguardian.com/uk?INTCMP=co_uk_cobed_like&skipAmount=1&highlight=" + amount.toString();
+    $SUMBIT.href = "https://contribute.theguardian.com/uk?INTCMP=co_uk_cobed_like_interactive&skipAmount=1&highlight=" + amount.toString();
 }
 
 init();
